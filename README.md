@@ -21,7 +21,7 @@
 
 ![image](https://github.com/MarioMuco/Developer_Management_System/assets/45602326/7f407bfb-bbbb-4dfc-a414-d1fa5807dcdf)
 
-`
+```
 CREATE DATABASE management;
 USE management;
 
@@ -48,5 +48,5 @@ CREATE TABLE Developer_Project (
     FOREIGN KEY (Developer_ID) REFERENCES Developer(ID),
     FOREIGN KEY (Project_ID) REFERENCES Project(ID)
 );
-`
+```
 
