@@ -19,4 +19,5 @@
 
 ### Entity Relationship Diagram
 
-![image](https://github.com/MarioMuco/Developer_Management_System/assets/45602326/e683dfa5-854e-4aad-be2d-60999a24d709)
+![image](https://github.com/MarioMuco/Developer_Management_System/assets/45602326/7f407bfb-bbbb-4dfc-a414-d1fa5807dcdf)
+
