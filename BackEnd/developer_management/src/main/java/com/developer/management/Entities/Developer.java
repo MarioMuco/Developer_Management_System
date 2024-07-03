@@ -4,6 +4,9 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.HashSet;
+import java.util.Set;
+
 @Setter
 @Getter
 @Entity
@@ -28,6 +31,14 @@ public class Developer {
         this.experience = experience;
         this.profile_photo = photo;
     }
+
+    @ManyToMany
+    @JoinTable(
+            name = "developer_project",
+            joinColumns = @JoinColumn(name = "developer_id"),
+            inverseJoinColumns = @JoinColumn(name = "project_id")
+    )
+    private Set<Project> projects = new HashSet<>();
 
     @Override
     public String toString() {

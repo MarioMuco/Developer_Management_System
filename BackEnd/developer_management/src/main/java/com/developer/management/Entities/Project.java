@@ -4,6 +4,9 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.HashSet;
+import java.util.Set;
+
 @Setter
 @Getter
 @Entity
@@ -24,6 +27,9 @@ public class Project {
         this.technology = technology;
         this.added_at = added_at;
     }
+
+    @ManyToMany(mappedBy = "projects")
+    private Set<Developer> developers = new HashSet<>();
 
     @Override
     public String toString() {
