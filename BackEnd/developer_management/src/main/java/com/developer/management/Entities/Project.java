@@ -28,8 +28,10 @@ public class Project {
         this.added_at = added_at;
     }
 
+     /*
     @ManyToMany(mappedBy = "projects")
     private Set<Developer> developers = new HashSet<>();
+      */
 
     @Override
     public String toString() {
