@@ -14,4 +14,18 @@ export class DeveloperService {
   getDevelopers(): Observable<Developer[]> {
     return this.http.get<Developer[]>(this.apiUrl);
   }
+
+  postDevelopers(developer: Developer): Observable<Developer[]> {
+    return this.http.post<Developer[]>(this.apiUrl, developer);
+  }
+
+  putDevelopers(developer: Developer): Observable<Developer[]> {
+    const url = `${this.apiUrl}/edit/${developer.id}`;
+    return this.http.put<Developer[]>(url, developer);
+  }
+
+  deleteDevelopers(developerId: number): Observable<Developer[]> {
+    const url = `${this.apiUrl}/delete/${developerId}`;
+    return this.http.delete<Developer[]>(url);
+  }
 }

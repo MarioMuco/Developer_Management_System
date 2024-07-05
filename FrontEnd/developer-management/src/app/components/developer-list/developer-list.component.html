@@ -1,13 +1,16 @@
 <div class="developer-list-container">
     <h2>Developer List</h2>
+    <button class="add_button">Add</button>
     <table>
       <thead>
         <tr>
-          <th>Profile Photo</th>
+          <th>Photo</th>
           <th>First Name</th>
           <th>Last Name</th>
           <th>Skills</th>
           <th>Experience</th>
+          <th></th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
@@ -17,6 +20,8 @@
           <td>{{ developer.last_name }}</td>
           <td>{{ developer.skills }}</td>
           <td>{{ developer.experience }}</td>
+          <td><button class="edit_button">Edit</button></td>
+          <td><button class="delete_button">Delete</button></td>
         </tr>
       </tbody>
     </table>
