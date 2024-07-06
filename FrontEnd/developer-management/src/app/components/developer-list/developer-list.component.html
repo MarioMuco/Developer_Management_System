@@ -1,29 +1,28 @@
 <div class="developer-list-container">
-    <h2>Developer List</h2>
-    <button class="add_button">Add</button>
-    <table>
-      <thead>
-        <tr>
-          <th>Photo</th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Skills</th>
-          <th>Experience</th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let developer of developers">
-          <td><img [src]="developer.profile_photo" alt="{{developer.first_name}} {{developer.last_name}}'s photo"></td>
-          <td>{{ developer.first_name }}</td>
-          <td>{{ developer.last_name }}</td>
-          <td>{{ developer.skills }}</td>
-          <td>{{ developer.experience }}</td>
-          <td><button class="edit_button">Edit</button></td>
-          <td><button class="delete_button">Delete</button></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  
+  <h2>Developer List</h2>
+  <button class="add_button">Add</button>
+  <table>
+    <thead>
+      <tr>
+        <th>Photo</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Skills</th>
+        <th>Experience</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let developer of developers">
+        <td><img [src]="developer.profile_photo" alt="{{developer.first_name}} {{developer.last_name}}'s photo"></td>
+        <td>{{ developer.first_name }}</td>
+        <td>{{ developer.last_name }}</td>
+        <td>{{ developer.skills }}</td>
+        <td>{{ developer.experience }}</td>
+        <td><button class="edit_button">Edit</button></td>
+        <td><button (click)="deleteDeveloper(developer.id)" class="delete_button">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

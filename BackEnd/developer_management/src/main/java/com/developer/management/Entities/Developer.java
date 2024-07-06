@@ -32,7 +32,6 @@ public class Developer {
         this.profile_photo = photo;
     }
 
-    /*
     @ManyToMany
     @JoinTable(
             name = "developer_project",
@@ -40,7 +39,6 @@ public class Developer {
             inverseJoinColumns = @JoinColumn(name = "project_id")
     )
     private Set<Project> projects = new HashSet<>();
-*/
 
     @Override
     public String toString() {

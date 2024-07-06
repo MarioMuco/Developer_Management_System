@@ -49,7 +49,12 @@ public class DeveloperController {
     }
 
     @DeleteMapping("/delete/{id}")
-    public void deleteDeveloper(@PathVariable Long id){
-        developerRepository.deleteById(id);
+    public ResponseEntity<Void> deleteDeveloper(@PathVariable Long id) {
+        if (developerRepository.existsById(id)) {
+            developerRepository.deleteById(id);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
     }
 }

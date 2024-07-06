@@ -1,0 +1,14 @@
+authguard for url protection
+profile page for developers
+projects imbedded in profile page 
+validations for inputsa at add edit
+pagination for large no of profiles
+search bar in front end 
+api that can filter data
+api to add update delete projects
+add new projects to users
+export profile as pdf
+pfp can be edited but not added
+
+
+

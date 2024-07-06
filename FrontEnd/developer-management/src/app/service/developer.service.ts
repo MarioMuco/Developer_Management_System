@@ -24,8 +24,8 @@ export class DeveloperService {
     return this.http.put<Developer[]>(url, developer);
   }
 
-  deleteDevelopers(developerId: number): Observable<Developer[]> {
+  deleteDeveloper(developerId: number): Observable<void> {
     const url = `${this.apiUrl}/delete/${developerId}`;
-    return this.http.delete<Developer[]>(url);
+    return this.http.delete<void>(url);
   }
 }
