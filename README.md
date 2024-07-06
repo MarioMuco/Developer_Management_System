@@ -25,7 +25,11 @@
 - Update the profile data model to include project history
 - Design UI components to display and add project history in profiles.
 - Implement the API to handle adding and updating project history.
- 
+
+### Bonus Features
+ - Implement a feature in the UI to export profiles.
+ - Develop backend functionality to generate and download PDF files.
+
 
 
 ### Entity Relationship Diagram
