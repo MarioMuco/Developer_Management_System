@@ -16,7 +16,8 @@ export class DeveloperService {
   }
 
   postDevelopers(developer: Developer): Observable<Developer[]> {
-    return this.http.post<Developer[]>(this.apiUrl, developer);
+    const url = `${this.apiUrl}/addDeveloper`;
+    return this.http.post<Developer[]>(url, developer);
   }
 
   putDevelopers(developer: Developer): Observable<Developer[]> {
